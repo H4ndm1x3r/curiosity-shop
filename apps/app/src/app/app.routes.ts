@@ -7,5 +7,5 @@ export const appRoutes: Route[] = [
   { path: 'weapon', loadComponent: () => WeaponItemsComponent},
   { path: 'vitality', loadComponent: () => VitalityItemsComponent},
   { path: 'spirit', loadComponent: () => SpiritItemsComponent},
-  { path: '**', loadComponent: () => WeaponItemsComponent},
+  { path: '**', redirectTo: 'weapon' },
 ];

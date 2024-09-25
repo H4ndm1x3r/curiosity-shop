@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CuriosityHeaderComponent } from "./curiosity-header/curiosity-header.component";
+import { CuriosityHeaderComponent } from './curiosity-header/curiosity-header.component';
 
 @Component({
   standalone: true,
