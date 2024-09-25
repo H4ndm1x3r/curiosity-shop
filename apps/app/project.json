@@ -10,10 +10,10 @@
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/app",
+        "outputPath": "dist/app",
         "index": "apps/app/src/index.html",
         "browser": "apps/app/src/main.ts",
-        "polyfills": [],
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/app/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -39,9 +39,7 @@
               "maximumError": "4kb"
             }
           ],
-          "outputHashing": "all",
-          "optimization": true
-
+          "outputHashing": "all"
         },
         "development": {
           "optimization": false,
@@ -83,7 +81,7 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "app:build",
-        "staticFilePath": "dist/apps/app/browser",
+        "staticFilePath": "dist/app",
         "spa": true
       }
     }
