@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, picture, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+img, picture, svg, video, canvas {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+}
