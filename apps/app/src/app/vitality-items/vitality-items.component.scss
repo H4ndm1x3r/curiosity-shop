@@ -1,0 +1,51 @@
+$vitality-background-light: #4d7213;
+$vitality-background-dark: #405f0f;
+
+host {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 12px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px;
+    grid-auto-rows: 80px;
+    width: 100%;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+
+    h2 {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &--vitality {
+    &-light {
+      background-color: $vitality-background-light;
+    }
+
+    &-dark {
+      background-color: $vitality-background-dark;
+    }
+  }
+}
